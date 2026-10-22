@@ -5,7 +5,10 @@ The previous live site uses cPanel / PHP hosting. The rebuild uses Node.js / Nex
 ## Permanent source checkpoints
 
 - `legacy/php-mysql` branch and `v1.0.0-php` tag: the original PHP / MySQL site at commit `63ba9c545607c8744104155b444443a5a82b0972`, before the rebuild.
-- `main` branch and `v2.0.0-nextjs` tag: the Next.js / PostgreSQL rebuild.
+- `newVersion` branch and `v2.0.0-nextjs` tag: the alternative redesigned Next.js / PostgreSQL showroom.
+- `main` branch: the original homepage style converted to Next.js / PostgreSQL. It retains the original CSS, content, images and layout.
+
+`main/newVersion` cannot coexist with a branch named `main` because Git treats these ref names as a file/directory conflict. The redesign is therefore preserved on `newVersion`.
 
 Keep these release tags. Add a new version tag for each future production release so a known version can be selected without rewriting Git history.
 

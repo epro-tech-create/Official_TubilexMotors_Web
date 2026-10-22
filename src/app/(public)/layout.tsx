@@ -6,10 +6,10 @@ export default function PublicLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="modern-ui">
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }
